@@ -1,3 +1,20 @@
 body {
     background-color: lightsalmon;
+    border-style: outset;
+    padding: 20px;
+}
+main{
+    background-color: lightgreen;
+    border-style: inset;
+    margin: 20px;
+    padding: 20px;
+}
+li:nth-child(2) {
+    background-color: yellow;
+}
+li:first-of-type {
+    background-color: green;
+}
+ol:nth-last-of-type(2){
+    background-color: beige;
 }
