@@ -23,6 +23,24 @@ h1, h2 {
     font-family: 'Lora', serif;
 }
 
+/*navigation links*/
+nav a:link {
+    color:  #FAEBD7;
+    text-decoration: none;
+}
+nav a:visited {
+    color:  #FAEBD7;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+nav a:active {
+    color: #DEB887;
+}
+
+/* body links */
 a:link {
     color:  #FAEBD7;
     text-decoration: none;
@@ -36,5 +54,25 @@ text-decoration: underline;
 }
 a:active {
     color: #DEB887;
+}
 
+/*article links*/
+article a:link {
+color: black;
+text-decoration: none;
+}
+article a:visited {
+    color: black;
+text-decoration: none;
+}
+article a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+article a:active {
+    color: #DEB887;
+}
+
+.post-date {
+    color: #838383;
 }
