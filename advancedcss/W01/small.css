@@ -8,7 +8,11 @@ Article title links should behave thus: normal and visited: black and no underli
 You should be able to do this without modifying the html. Have that as your goal. If you do end up changing the .html file make sure to submit it with your css! */
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap');
+main {
+    background-color: teal;
+}
 
+@media only screen and (max-width: 600px) {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -75,4 +79,12 @@ article a:active {
 
 .post-date {
     color: #838383;
+}
+
+article {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
 }
