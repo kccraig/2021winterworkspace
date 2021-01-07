@@ -31,8 +31,9 @@ header {
     color: #FAEBD7;
     padding: 40px;
     text-align: right;
-
 }
+
+
 
 
 h1,
@@ -46,12 +47,12 @@ nav li {
     padding: 5px;
 }
 
-nav a:link {
+header nav a:link {
     color: #FAEBD7;
     text-decoration: none;
 }
 
-nav a:visited {
+header nav a:visited {
     color: #FAEBD7;
     text-decoration: none;
 }
@@ -69,14 +70,11 @@ nav a:active {
 a:link {
     color: #6495ED;
     text-decoration: none;
-    
 }
-
 a:visted {
     color: #6495ED;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
@@ -84,23 +82,7 @@ a:active {
     color:#DEB887;
 }
 
-/* article title link */
 
-article:nth-of-type(h2) a:link {}
-    color: black;
-    text-decoration: none;
-   
-}
-
-article h2 a:visted {
-    color: black;
-    text-decoration: none;
-}
-
-article h2 a:hover {
-    color: #6495ED;
-    text-decoration: underline;
-}
 
 article h2 a:active {
     color: #DEB887;
@@ -117,7 +99,7 @@ article h2 a:active {
 
 article {
     background-color: white;
-    margin: 10px;
+    margin: 2em 1em 1em 1em;
     padding: 10px;
     border: 2px solid black;
     justify-content: center;
@@ -126,11 +108,12 @@ article {
 main {
     display: flex;
     flex-direction: column;
+
 }
 section {
-    margin: 10px;
+    
     padding: 10px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 @media only screen and (min-width: 600px) {
