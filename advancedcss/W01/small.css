@@ -7,73 +7,102 @@ Other page links should behave thus: normal and visited: #6495ED and no underlin
 Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined
 You should be able to do this without modifying the html. Have that as your goal. If you do end up changing the .html file make sure to submit it with your css! */
 
+/*  blue  color: #6495ED; 
+   beige color: #DEB887;
+*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap');
-main {
-    background-color: teal;
-}
 
-@media only screen and (max-width: 600px) {
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body>div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     background-color: #FAEBD7;
 }
+
 header {
     background-color: #6495ED;
     color: #FAEBD7;
+    padding: 40px;
+    text-align: right;
+
 }
-h1, h2 {
+
+
+h1,
+h2 {
     font-family: 'Lora', serif;
 }
 
 /*navigation links*/
+nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+
 nav a:link {
-    color:  #FAEBD7;
+    color: #FAEBD7;
     text-decoration: none;
 }
+
 nav a:visited {
-    color:  #FAEBD7;
+    color: #FAEBD7;
     text-decoration: none;
 }
+
 nav a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+
 nav a:active {
     color: #DEB887;
 }
 
-/* body links */
+/* other page links */
 a:link {
-    color:  #FAEBD7;
+    color: #6495ED;
     text-decoration: none;
-}
-a:visited {
-    color:  #FAEBD7;
-    text-decoration: none;
-}
-a:hover {
-text-decoration: underline;
-}
-a:active {
-    color: #DEB887;
+    
 }
 
-/*article links*/
-article a:link {
-color: black;
-text-decoration: none;
+a:visted {
+    color: #6495ED;
+    text-decoration: none;
 }
-article a:visited {
+
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color:#DEB887;
+}
+
+/* article title link */
+
+article:nth-of-type(h2) a:link {}
     color: black;
-text-decoration: none;
+    text-decoration: none;
+   
 }
-article a:hover {
+
+article h2 a:visted {
+    color: black;
+    text-decoration: none;
+}
+
+article h2 a:hover {
     color: #6495ED;
     text-decoration: underline;
 }
-article a:active {
+
+article h2 a:active {
     color: #DEB887;
 }
 
@@ -81,10 +110,40 @@ article a:active {
     color: #838383;
 }
 
+/* .wholepage {
+    display: flex;
+    flex-direction: column;
+} */
+
 article {
     background-color: white;
     margin: 10px;
     padding: 10px;
     border: 2px solid black;
+    justify-content: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        background-color: teal;
+    }
+
+    /* .wholepage {
+        display: flex;
+        flex-direction: row;
+    } */
+    body>div:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+    }
 }
