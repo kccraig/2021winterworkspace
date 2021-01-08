@@ -33,9 +33,6 @@ header {
     text-align: right;
 }
 
-
-
-
 h1,
 h2 {
     font-family: 'Lora', serif;
@@ -70,6 +67,7 @@ nav a:active {
 a:link {
     color: #6495ED;
     text-decoration: none;
+    /* background-color: yellow; */
 }
 a:visted {
     color: #6495ED;
@@ -83,13 +81,19 @@ a:active {
 }
 
 
-
+article {
+    position: relative;
+    text-align: center;
+}
 article h2 a:active {
     color: #DEB887;
 }
 
 .post-date {
     color: #838383;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /* .wholepage {
@@ -101,10 +105,14 @@ article {
     background-color: white;
     margin: 2em 1em 1em 1em;
     padding: 10px;
-    border: 2px solid black;
-    justify-content: center;
+    
+    
 }
-
+figure {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: yellow;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -118,7 +126,7 @@ section {
 
 @media only screen and (min-width: 600px) {
     main {
-        background-color: teal;
+        /* background-color: teal; */
     }
 
     /* .wholepage {
