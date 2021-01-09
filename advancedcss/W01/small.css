@@ -69,7 +69,7 @@ a:link {
     text-decoration: none;
     /* background-color: yellow; */
 }
-a:visted {
+a:visited {
     color: #6495ED;
     text-decoration: none;
 }
@@ -79,7 +79,6 @@ a:hover {
 a:active {
     color:#DEB887;
 }
-
 
 article {
     position: relative;
