@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap");
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Lora", serif;
+}
+
+header {
+  background-color: #6495ED;
+  text-align: right;
+  padding: 1em;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+header a:link {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+header a:active {
+  color: #DEB887;
+}
+
+main {
+  background-color: #FAEBD7;
+}
+
+/*article title links*/
+h2 a:link {
+  color: black;
+  text-decoration: none;
+}
+h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+h2 a:hover {
+  color: #6495ED;
+}
+h2 a:active {
+  color: #DEB887;
+}
+
+/* just plain links*/
+a:link {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #DEB887;
+}
+
+article {
+  position: relative;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.post-date {
+  color: #828282;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.post-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 15px 15px 40px;
+  margin: 30px 20px 10px 20px;
+  justify-content: center;
+}
+
+section {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  word-wrap: normal;
+}
+
+@media only screen and (min-width: 600px) {
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .post-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-date img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  article {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap');
+
+$bluecolor: #6495ED;
+$mainbackground: #FAEBD7;
+$activetext: #DEB887;
+
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin marginCenter {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: $bluecolor;
+    text-align: right;
+    padding: 1em;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+header {
+    a:link {
+        color: $mainbackground;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $mainbackground;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: $activetext;
+    }
+}
+
+main {
+    background-color: $mainbackground;
+}
+
+/*article title links*/
+h2 {
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $bluecolor;
+    }
+
+    a:active {
+        color: $activetext;
+    }
+}
+
+/* just plain links*/
+a:link {
+    color: $bluecolor;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $bluecolor;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: $activetext;
+}
+
+article {
+    position: relative;
+    justify-content: left;
+    @include flexcolumn();
+    margin-right: 0;
+}
+
+.post-date {
+    color: hsl(0, 0%, 51%);
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.post-content {
+    background-color: white;
+    @include flexcolumn();
+    padding: 40px 15px 15px 40px;
+    margin: 30px 20px 10px 20px;
+    justify-content: center;
+}
+
+section {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+div {
+    @include flexcolumn();
+    word-wrap: normal;
+}
+
+@media only screen and (min-width: 600px) {
+    div {
+        @include flexrow();
+    }
+
+    .post-content {
+        background-color: white;
+        @include flexcolumn();
+        align-items: flex-start;
+    }
+
+    .post-date img {
+        @include marginCenter();
+    }
+
+    article {
+        @include marginCenter();
+    }
+}
