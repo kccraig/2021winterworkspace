@@ -18,6 +18,9 @@ $activetext: #DEB887;
     margin-right: auto;
     margin-left: auto;
 }
+@mixin noline {
+    text-decoration: none;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +45,12 @@ li {
 header {
     a:link {
         color: $mainbackground;
-        text-decoration: none;
+        @include noline();
     }
 
     a:visited {
         color: $mainbackground;
-        text-decoration: none;
+        @include noline();
     }
 
     a:hover {
@@ -69,12 +72,12 @@ h2 {
 
     a:link {
         color: black;
-        text-decoration: none;
+        @include noline();
     }
 
     a:visited {
         color: black;
-        text-decoration: none;
+        @include noline();
     }
 
     a:hover {
@@ -89,12 +92,12 @@ h2 {
 /* just plain links*/
 a:link {
     color: $bluecolor;
-    text-decoration: none;
+    @include noline();
 }
 
 a:visited {
     color: $bluecolor;
-    text-decoration: none;
+    @include noline();
 }
 
 a:hover {
