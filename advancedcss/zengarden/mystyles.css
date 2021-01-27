@@ -1,0 +1,19 @@
+/* lightblue #C7E8F3;
+salmon #E88D67;
+purple #320E3B;
+pink #BB999C;
+yellow #FFF05A; */
+
+body {
+    background-color: #C7E8F3;
+}
+header {
+    background-color: #E88D67;
+}
+
+div {
+    border: 3px solid #320E3B;
+}
+footer {
+    background-color: #E88D67;
+}
